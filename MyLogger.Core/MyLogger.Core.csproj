@@ -51,6 +51,7 @@
     <Compile Include="MyLogDetail.cs" />
     <Compile Include="MyLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RastreadorDesempenho.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
