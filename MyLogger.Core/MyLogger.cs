@@ -58,7 +58,7 @@ namespace MyLogger.Core
             if (!deveLogarDiagsnostico)
                 return;
 
-            Problema.Write(LogEventLevel.Information, "{@MyLogDetail}", diagnostico);
+            Dignostico.Write(LogEventLevel.Information, "{@MyLogDetail}", diagnostico);
         }
     }
 
