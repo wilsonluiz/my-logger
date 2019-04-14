@@ -24,9 +24,9 @@ namespace MyLogger.Core
         #endregion
 
         #region QUEM
-        public decimal IdUsuario { get; set; }
+        public decimal? IdUsuario { get; set; }
         public string NomeUsuario { get; set; }
-        public decimal IdCliente { get; set; }
+        public decimal? IdCliente { get; set; }
         public string NomeCliente { get; set; }
         #endregion
 
