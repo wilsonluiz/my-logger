@@ -14,13 +14,13 @@ namespace MyLogger.Core
         private readonly Stopwatch _sw;
         private readonly MyLogDetail _infoParaLogar;
 
-        public RastreadorDesempenho(string mensagem, decimal idUsuario, string nomeUsuario,
+        public RastreadorDesempenho(string nome, decimal? idUsuario, string nomeUsuario,
             string localizacao, string aplicacao, string camadaAplicacao)
         {
             _sw = Stopwatch.StartNew();
             _infoParaLogar = new MyLogDetail()
             {
-                Mensagem = mensagem,
+                Mensagem = nome,
                 IdUsuario = idUsuario,
                 NomeUsuario = nomeUsuario,
                 Aplicacao = aplicacao,
@@ -36,10 +36,10 @@ namespace MyLogger.Core
             };
         }
 
-        public RastreadorDesempenho(string mensagem, decimal idUsuario, string nomeUsuario,
+        public RastreadorDesempenho(string nome, decimal? idUsuario, string nomeUsuario,
             string localizacao, string aplicacao, string camadaAplicacao,
             Dictionary<string, object> parametrosDesempenho)
-            : this(mensagem, idUsuario, nomeUsuario, localizacao, aplicacao, camadaAplicacao)
+            : this(nome, idUsuario, nomeUsuario, localizacao, aplicacao, camadaAplicacao)
         {
             foreach (var parametro in parametrosDesempenho)
             {
